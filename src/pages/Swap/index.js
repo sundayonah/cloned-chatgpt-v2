@@ -26,8 +26,9 @@ const TOKEN_TO_ETH = 1
 const TOKEN_TO_TOKEN = 2
 
 // denominated in bips
-const ALLOWED_SLIPPAGE = ethers.utils.bigNumberify(200)
-const TOKEN_ALLOWED_SLIPPAGE = ethers.utils.bigNumberify(400)
+// RHO: changed to zero slippage
+const ALLOWED_SLIPPAGE = ethers.utils.bigNumberify(0)
+const TOKEN_ALLOWED_SLIPPAGE = ethers.utils.bigNumberify(0)
 
 // denominated in seconds
 const DEADLINE_FROM_NOW = 60 * 15
